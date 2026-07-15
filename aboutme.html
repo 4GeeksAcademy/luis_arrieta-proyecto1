@@ -5,7 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna Arce | Sobre mi</title>
     <meta name="description" content="Conoce la historia de Luna Arce, su identidad artistica y la propuesta escenica que la define.">
+        <meta name="robots" content="index,follow">
+        <meta name="author" content="Luna Arce">
+        <link rel="canonical" href="https://lunaarce.art/aboutme.html">
+
+        <meta property="og:type" content="profile">
+        <meta property="og:locale" content="es_ES">
+        <meta property="og:site_name" content="Luna Arce">
+        <meta property="og:title" content="Luna Arce | Sobre mi">
+        <meta property="og:description" content="Historia e identidad artistica de Luna Arce.">
+        <meta property="og:url" content="https://lunaarce.art/aboutme.html">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Luna Arce | Sobre mi">
+        <meta name="twitter:description" content="Conoce la historia artistica de Luna Arce y su propuesta escenica.">
+        <meta name="twitter:image" content="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80">
+
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "name": "Sobre Luna Arce",
+            "url": "https://lunaarce.art/aboutme.html",
+            "mainEntity": {
+                "@type": "Person",
+                "name": "Luna Arce",
+                "jobTitle": "Cantautora y artista escenica",
+                "description": "Compositora y performer con enfoque narrativo y puesta audiovisual.",
+                "sameAs": [
+                    "https://www.instagram.com/",
+                    "https://www.youtube.com/",
+                    "https://open.spotify.com/"
+                ]
+            }
+        }
+        </script>
 </head>
 <body>
     <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
@@ -14,8 +52,15 @@
         <div class="container nav-wrap">
             <a class="brand" href="index.html" aria-label="Ir al inicio">Luna Arce</a>
 
-            <nav aria-label="Navegacion principal">
-                <ul class="nav-list">
+            <nav class="site-nav" aria-label="Navegacion principal">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir navegacion principal">
+                    <span class="nav-toggle-box" aria-hidden="true">
+                        <span class="nav-toggle-bar"></span>
+                        <span class="nav-toggle-bar"></span>
+                        <span class="nav-toggle-bar"></span>
+                    </span>
+                </button>
+                <ul id="primary-navigation" class="nav-list" data-visible="false">
                     <li><a href="aboutme.html" aria-current="page">Sobre mi</a></li>
                     <li><a href="trayectoria.html">Trayectoria</a></li>
                     <li><a href="presentaciones.html">Proximas presentaciones</a></li>
@@ -84,9 +129,9 @@
 
             <nav aria-label="Redes sociales">
                 <ul class="footer-links">
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                    <li><a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (abre en nueva pestana)</span></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube<span class="sr-only"> (abre en nueva pestana)</span></a></li>
+                    <li><a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify<span class="sr-only"> (abre en nueva pestana)</span></a></li>
                 </ul>
             </nav>
 

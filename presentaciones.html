@@ -5,7 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna Arce | Proximas presentaciones</title>
     <meta name="description" content="Descubre las proximas presentaciones de Luna Arce, fechas confirmadas y enlaces para reservar entradas.">
+        <meta name="robots" content="index,follow">
+        <meta name="author" content="Luna Arce">
+        <link rel="canonical" href="https://lunaarce.art/presentaciones.html">
+
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="es_ES">
+        <meta property="og:site_name" content="Luna Arce">
+        <meta property="og:title" content="Luna Arce | Proximas presentaciones">
+        <meta property="og:description" content="Agenda de shows confirmados con fecha, ciudad y venue.">
+        <meta property="og:url" content="https://lunaarce.art/presentaciones.html">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Luna Arce | Proximas presentaciones">
+        <meta name="twitter:description" content="Revisa fechas confirmadas y reserva entradas para el tour Ciudad Interior.">
+        <meta name="twitter:image" content="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80">
+
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Event",
+                    "name": "Luna Arce en Casa Sonora",
+                    "startDate": "2026-08-21T21:00:00-05:00",
+                    "eventStatus": "https://schema.org/EventScheduled",
+                    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                    "location": {
+                        "@type": "Place",
+                        "name": "Casa Sonora",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Bogota",
+                            "addressCountry": "CO"
+                        }
+                    },
+                    "performer": {
+                        "@type": "Person",
+                        "name": "Luna Arce"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "url": "https://lunaarce.art/presentaciones.html",
+                        "priceCurrency": "USD",
+                        "price": "15",
+                        "availability": "https://schema.org/InStock"
+                    }
+                },
+                {
+                    "@type": "Event",
+                    "name": "Luna Arce en Foro Ritual",
+                    "startDate": "2026-09-06T20:30:00-05:00",
+                    "eventStatus": "https://schema.org/EventScheduled",
+                    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                    "location": {
+                        "@type": "Place",
+                        "name": "Foro Ritual",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Medellin",
+                            "addressCountry": "CO"
+                        }
+                    },
+                    "performer": {
+                        "@type": "Person",
+                        "name": "Luna Arce"
+                    }
+                },
+                {
+                    "@type": "Event",
+                    "name": "Luna Arce en La Nube",
+                    "startDate": "2026-10-02T21:30:00-06:00",
+                    "eventStatus": "https://schema.org/EventScheduled",
+                    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                    "location": {
+                        "@type": "Place",
+                        "name": "La Nube",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Ciudad de Mexico",
+                            "addressCountry": "MX"
+                        }
+                    },
+                    "performer": {
+                        "@type": "Person",
+                        "name": "Luna Arce"
+                    }
+                }
+            ]
+        }
+        </script>
 </head>
 <body>
     <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
@@ -14,8 +107,15 @@
         <div class="container nav-wrap">
             <a class="brand" href="index.html" aria-label="Ir al inicio">Luna Arce</a>
 
-            <nav aria-label="Navegacion principal">
-                <ul class="nav-list">
+            <nav class="site-nav" aria-label="Navegacion principal">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir navegacion principal">
+                    <span class="nav-toggle-box" aria-hidden="true">
+                        <span class="nav-toggle-bar"></span>
+                        <span class="nav-toggle-bar"></span>
+                        <span class="nav-toggle-bar"></span>
+                    </span>
+                </button>
+                <ul id="primary-navigation" class="nav-list" data-visible="false">
                     <li><a href="aboutme.html">Sobre mi</a></li>
                     <li><a href="trayectoria.html">Trayectoria</a></li>
                     <li><a href="presentaciones.html" aria-current="page">Proximas presentaciones</a></li>
@@ -41,31 +141,31 @@
                 <article class="event-card" aria-label="Fecha en Bogota">
                     <p class="event-city">Bogota, CO</p>
                     <h2>Casa Sonora</h2>
-                    <p class="event-date">21 de agosto de 2026 - 9:00 PM</p>
+                    <p class="event-date"><time datetime="2026-08-21T21:00:00-05:00">21 de agosto de 2026 - 9:00 PM</time></p>
                     <p class="event-copy">
                         Show completo con formato banda y visuales inmersivos en tiempo real.
                     </p>
-                    <a class="btn-primary" href="#" aria-label="Reservar entradas para Casa Sonora en Bogota">Reservar entradas</a>
+                    <a class="btn-primary" href="https://example.com/entradas-casa-sonora" target="_blank" rel="noopener noreferrer" aria-label="Reservar entradas para Casa Sonora en Bogota (abre en nueva pestana)">Reservar entradas</a>
                 </article>
 
                 <article class="event-card" aria-label="Fecha en Medellin">
                     <p class="event-city">Medellin, CO</p>
                     <h2>Foro Ritual</h2>
-                    <p class="event-date">6 de septiembre de 2026 - 8:30 PM</p>
+                    <p class="event-date"><time datetime="2026-09-06T20:30:00-05:00">6 de septiembre de 2026 - 8:30 PM</time></p>
                     <p class="event-copy">
                         Formato hibrido acustico-electronico con apertura de artista invitada local.
                     </p>
-                    <a class="btn-primary" href="#" aria-label="Reservar entradas para Foro Ritual en Medellin">Reservar entradas</a>
+                    <a class="btn-primary" href="https://example.com/entradas-foro-ritual" target="_blank" rel="noopener noreferrer" aria-label="Reservar entradas para Foro Ritual en Medellin (abre en nueva pestana)">Reservar entradas</a>
                 </article>
 
                 <article class="event-card" aria-label="Fecha en Ciudad de Mexico">
                     <p class="event-city">Ciudad de Mexico, MX</p>
                     <h2>La Nube</h2>
-                    <p class="event-date">2 de octubre de 2026 - 9:30 PM</p>
+                    <p class="event-date"><time datetime="2026-10-02T21:30:00-06:00">2 de octubre de 2026 - 9:30 PM</time></p>
                     <p class="event-copy">
                         Cierre de etapa del tour con set extendido y colaboraciones especiales.
                     </p>
-                    <a class="btn-primary" href="#" aria-label="Reservar entradas para La Nube en Ciudad de Mexico">Reservar entradas</a>
+                    <a class="btn-primary" href="https://example.com/entradas-la-nube" target="_blank" rel="noopener noreferrer" aria-label="Reservar entradas para La Nube en Ciudad de Mexico (abre en nueva pestana)">Reservar entradas</a>
                 </article>
             </div>
         </section>
@@ -90,9 +190,9 @@
 
             <nav aria-label="Redes sociales">
                 <ul class="footer-links">
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                    <li><a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (abre en nueva pestana)</span></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube<span class="sr-only"> (abre en nueva pestana)</span></a></li>
+                    <li><a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify<span class="sr-only"> (abre en nueva pestana)</span></a></li>
                 </ul>
             </nav>
 
